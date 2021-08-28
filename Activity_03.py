@@ -12,3 +12,11 @@ concatenated_string =str1+" "+str2
 print("concatenated string:",concatenated_string)
  
 print((concatenated_string+"\n")*5)
+
+other method
+str1="good"
+str2="afternoon"
+concatenated_string= str1+" "+str2
+print("concatenated string:",concatenated_string)
+str3="{} {}".format(str1,str2)
+print((str3 +"\n")*5)
