@@ -1,18 +1,28 @@
 Copy paste the all the commands that you executed on IDLE:
-Python 3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
->>> 273.15+25
-298.15
->>> 911-314
-597
->>> 3*19
-57
->>> 2020/17
-118.82352941176471
->>> 2020/19.0
-106.3157894736842
->>> 2021%21
-5
->>> pow(2,7)
-128
->>> 
+a=273.15
+b=25
+sum=a+b
+print("1)sum=",sum)
+a=911
+b=314
+diff=a-b
+print("2)diff=",diff)
+a=3
+b=19
+mul=a*b
+print("3)mul=",mul)
+a=2020
+b=17
+divide=a/b
+print("4)divide=",divide)
+a=2020
+b=19
+quotient=a/b
+print("5)quotient=",quotient)
+a=2021
+b=21
+remainder=a%b
+print("6)remainder=",remainder)
+power=pow(2,7)
+print("7)2^7=",power)
+
