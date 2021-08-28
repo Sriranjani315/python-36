@@ -1,4 +1,4 @@
-addition of nos in list
+
 a=input()
 list=a.split()[:5]
 sum=0
