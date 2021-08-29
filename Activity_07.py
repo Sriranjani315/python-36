@@ -8,6 +8,10 @@ a=input()
 Mylist=a.split()
 sum=0
 for i in range(len(Mylist)):
+    if  i > 0 :
+        print("+", end='')
+    print("{0}".format(Mylist[i]), end='')
     sum=sum+int(Mylist[i])
-    print("{0}+".format(Mylist[i]))
+    
 print("={0}".format(sum))
+
