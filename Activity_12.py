@@ -12,9 +12,11 @@ def compare(a,b,c):
         return b
     else:
         return c
+def display(a,b,c,largest):
+    print("%d is the largest among %d,%d and %d"%(largest,a,b,c))
 
 def main():
     a,b,c=input_no()
     largest=compare(a,b,c)
-    print("largest of all three numbers is %d"%(largest))
+    display(a,b,c,largest)
 main()
