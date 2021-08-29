@@ -4,11 +4,18 @@ def input_no():
     b=int(input("enter the stop number\n"))
     return a,b
 def oddnos(a,b):
+    res=[]
     for num in range(a,b):
         if(num%2!=0):
-            print(num)
+            res.append(num)
+    return res
+def display(odd_nos):
+    print("odd nos from start to stop is:",odd_nos)
+
 def main():
     a,b=input_no()
-    oddnos(a,b)
+    odd_nos=oddnos(a,b)
+    display(odd_nos)
 main()
     
+
