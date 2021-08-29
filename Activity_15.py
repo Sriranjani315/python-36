@@ -8,7 +8,7 @@ def input_no():
 def volume(l,b,h):    
     k=(l*l)+(b*b)+(h*h)
     volume=((b*b)*(h*h))/(math.sqrt(k))
-    radius= pow((3*float(volume)/(4*3.142)),1/3)
+    radius= pow((3*float(volume)/(4*(math.pi))),1/3)
     return volume,radius
 def display(volume,radius):    
     print("volume of tromboloid=%0.3f" %(volume))
@@ -20,3 +20,4 @@ def main():
     display(volume_tromboloid,radius)
 
 main()
+
