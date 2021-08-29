@@ -1,28 +1,25 @@
 #prime or not
-import math
-
-def input_number():
-    num = int(input("Enter the number\n "))
+def input_no():
+    num=int(input("Enter the number:"))
     return num
 def prime(n):
-   prime_flag = 0
-   if(n>1):
-       for i in range(2,int(math.sqrt(n))+1):
-            if(n%i==0):
-                prime_flag=1
-                break
-            return prime_flag
-            
-def display(prime_flag):
-    if(prime_flag==0):
-        print("it is prime")
+    flag=0
+    for i in range(2,int(math.sqrt(n)+1)):
+        if(n%i==0):
+            flag=1
+            break
+        else:
+            continue
+    return flag
+def result(flag):
+    if(flag==0):
+        print("It is a prime number")
     else:
-        print("it is not prime")
-
+        print("It is not a prime number")
 def main():
-    num = input_number()
-    prime_number = prime(num)
-    display(prime_number)
-main()  
+    num=input_no()
+    flag=prime(num)
+    result(flag)
+main()
             
                       
