@@ -9,8 +9,7 @@ def prime(n):
         if(n%i==0):
             flag=false
             break
-        else:
-            continue
+        
     return flag
 def result(flag):
     if(flag==True):
